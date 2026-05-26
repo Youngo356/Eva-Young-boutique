@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
 <meta charset="UTF-8">
 <title>Eva Young Boutique</title>
 
@@ -247,6 +248,10 @@ box.innerHTML+=`
 
 loadReviews();
 </script>
+  const client = supabase.createClient(
+  "https://chraqajhqnvekcjngspp.supabase.co",
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNocmFxYWpocW52ZWtjam5nc3BwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg3OTMwODUsImV4cCI6MjA5NDM2OTA4NX0.KuORrtDFjhdC0kdeykpG2TkQvG4AWZ7H4nk_4cs8Dpk"
+);
 
 </body>
   </html>
